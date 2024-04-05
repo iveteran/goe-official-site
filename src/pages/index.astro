@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import "../styles/global.css";
+---
+
+<Layout title="Welcome to GOE">
+  <main class="h-5/6">
+    <div class="h-full grid justify-items-center content-center content-evenly">
+      <div>
+        <img src="/images/logo-goe-je-100.png" alt="GOE logo"/>
+      </div>
+
+      <div class="md:w-1/2 sm:w-5/6">
+        <h1>GOE</h1>
+        <hr class="h-px my-8 border-0 bg-gray-200 dark:bg-gray-700">
+        <h2>Gaming On Empty</h2>
+      </div>
+
+      <button class="flex btn btn-blue w-50 gap-2">
+        <img src="/images/icon-finger-32.png" alt="finger icon" />
+        <span class="text-2xl">Let's jump in</span>
+      </button>
+    </div>
+	</main>
+</Layout>
+
+<style>
+  h1 {
+    font-family: "Inter", sans-serif;
+    /* font-size: 8rem; */
+    font-size: min(20vh, 20vw);
+    line-height: 1;
+    @apply font-bold;
+    @apply text-center;
+  }
+  h2 {
+    /*font-size: 2.5rem;*/
+    font-size: min(8vh, 8vw);
+    line-height: 1;
+    @apply text-center;
+  }
+</style>
